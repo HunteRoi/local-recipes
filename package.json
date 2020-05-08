@@ -14,7 +14,10 @@
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "gh-pages": "latest"
+    "gh-pages": "latest",
+    "execa": "latest",
+    "chalk": "latest",
+    "node-emoji": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"
