@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   list: {
-    width: 250,
+    maxWidth: 250,
   },
   ingredient:{
     marginBottom: 10,

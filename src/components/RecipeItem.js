@@ -13,23 +13,22 @@ const useStyles = makeStyles((theme) => ({
   img: {
     margin: 'auto',
     display: 'block',
-    maxWidth: '100%',
+    maxWidth: 480,
     maxHeight: '100%',
-    width: 480,
     borderRadius: '5%',
   },
   section1: {
     margin: theme.spacing(3, 2),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignContent: 'center'
   },
   section2: {
     margin: theme.spacing(2),
   },
   section3: {
     margin: theme.spacing(3, 1, 1),
-  },
-  section4: {
-    marginTop: theme.spacing(2),
-    float: 'right'
   }
 }));
 
@@ -42,16 +41,13 @@ export default function RecipeItem({ recipe }) {
     <Container fixed className={classes.root}>
       <div className={classes.section1}>
         <img className={classes.img} src={recipe.image} alt={recipe.name} />
+        <Author {...recipe} />
       </div>
       <div className={classes.section2}>
         <SummaryMenu {...recipe} />
       </div>
       <div className={classes.section3}>
         <RecipeTabs {...recipe} />
-      </div>
-
-      <div className={classes.section4}>
-        <Author {...recipe} />
       </div>
     </Container>
   );

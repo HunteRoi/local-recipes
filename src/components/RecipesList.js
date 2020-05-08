@@ -58,10 +58,14 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
   },
+  column: { 
+    flexBasis: '33.33%'
+  },
   secondaryHeading: {
+    marginLeft: theme.spacing(3),
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.text.secondary,
-  }
+  },
 }));
 
 export default function RecipesList() {
@@ -73,31 +77,33 @@ export default function RecipesList() {
 
   return (
     <div className={classes.root}>
-    {
-      recipes.map((recipe, index) => {
+      {recipes.map((recipe, index) => {
         const dataId = recipe.name.split(' ').join('-');
-        return (<ExpansionPanel
-          key={index}
-          square
-          expanded={expanded === dataId}
-          onChange={handleChange(dataId)}
-        >
-          <ExpansionPanelSummary
-            expandIcon={<ExpandMoreIcon />}
-            id={dataId+'-header'}
+        return (
+          <ExpansionPanel
+            key={index}
+            square
+            expanded={expanded === dataId}
+            onChange={handleChange(dataId)}
           >
-            <Typography className={classes.heading}>
-              {recipe.name}
-            </Typography>
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              id={dataId + '-header'}
+            >
+              <Typography className={classes.heading}>{recipe.name}</Typography>
 
-            <Taste numberOfStars={recipe.stars} className={classes.secondaryHeading}/>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <RecipeItem recipe={recipe} />
-          </ExpansionPanelDetails>
-        </ExpansionPanel>);
-      })
-    }
+              <div className={classes.column}>
+                <div className={classes.secondaryHeading}>
+                  <Taste numberOfStars={recipe.stars} />
+                </div>
+              </div>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <RecipeItem recipe={recipe} />
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        );
+      })}
     </div>
   );
 }

@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    margin: 'auto'
   },
   label: {
     marginLeft: theme.spacing(0.5),
@@ -26,7 +27,7 @@ export default function Author({ author }) {
     <div className={classes.root}>
       <CopyrightIcon style={{ fontSize: 12 }} /> 
       <Avatar src={author.avatar} alt={author.name} className={classes.small}/>
-      <Typography className={classes.label}>
+      <Typography variant='caption' className={classes.label}>
         {author.name} (<Link href={'https://www.instagram.com/' + author.instagram} onClick={preventDefault}>@{author.instagram}</Link>)
       </Typography>
     </div>

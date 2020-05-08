@@ -32,7 +32,7 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Container fixed>
-        <Typography variant='h1'>Mes Recettes Maison</Typography>
+        <Typography variant='h2'>Mes Recettes Maison</Typography>
 
         <div className={classes.root}>
           <Avatar alt='Tinaël Devresse' src='me.jpg' />

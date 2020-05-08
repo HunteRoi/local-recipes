@@ -19,8 +19,8 @@ const labels = {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginLeft: theme.spacing(15),
-    width: 200,
+    width: '100%',
+    maxWidth: 200,
     display: 'flex',
     alignItems: 'center',
   },
