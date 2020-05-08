@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     margin: 'auto',
     display: 'block',
-    maxWidth: 480,
+    maxWidth: '100%',
     maxHeight: '100%',
+    width: 480,
     borderRadius: '5%',
   },
   section1: {
