@@ -29,7 +29,7 @@ function SocialMediaLink({ username, profileURL }) {
 export default function Author({ author: { name, socialMedia } }) {
   const classes = useStyles();
   const [profilePictureURL] = React.useState(
-    socialMedia ? socialMedia.setProfilePictureURL || '' : ''
+    socialMedia ? socialMedia.profilePictureURL || '' : ''
   );
 
   return (
