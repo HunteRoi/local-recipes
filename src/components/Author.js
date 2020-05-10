@@ -18,28 +18,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function SocialMediaLink({ username, profileURL }) {
+  return profileURL && username 
+    ? (<>
+      (<Link href={profileURL} aria-label='social network name'>@{username}</Link>)
+    </>) 
+    : <></>;
+}
+
 export default function Author({ author: { name, socialMedia } }) {
   const classes = useStyles();
-  const [profilePictureURL, setProfilePictureURL] = React.useState(socialMedia.profilePictureURL || '');
-  const [profileURL, setProfileURL] = React.useState(socialMedia.profileURL || '');
-  const [username, setUsername] = React.useState(socialMedia.username || '');
-
-  React.useLayoutEffect(() => {
-    if (
-      socialMedia &&
-      socialMedia.type.toLowerCase() === 'instagram' &&
-      socialMedia.username
-    ) {
-      fetch(`https://www.instagram.com/${socialMedia.username}/?__a=1`)
-        .then((r) => r.json())
-        .then((o) => {
-          setProfilePictureURL(o.graphql.user.profile_pic_url_hd);
-          setProfileURL(`https://instagram.com/${socialMedia.username}`);
-          setUsername(o.graphql.user.full_name);
-        })
-        .catch(console.error);
-    }
-  });
+  const [profilePictureURL] = React.useState(
+    socialMedia ? socialMedia.setProfilePictureURL || '' : ''
+  );
 
   return (
     <div className={classes.root}>
@@ -55,11 +46,7 @@ export default function Author({ author: { name, socialMedia } }) {
         className={classes.label}
         aria-label='recipe author name'
       >
-        {name} (
-        <Link href={profileURL} aria-label='social network name'>
-          @{username}
-        </Link>
-        )
+        {name} <SocialMediaLink {...socialMedia} />
       </Typography>
     </div>
   );

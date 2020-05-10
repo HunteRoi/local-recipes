@@ -33,26 +33,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function RecipeItem({ recipe }) {
   if (recipe == null) throw new Error('Recipe cannot be undefined');
-
   const classes = useStyles();
-  const [imgURL, setImgURL] = React.useState(recipe.imageURL || '');
-
-  React.useLayoutEffect(() => {
-    if (
-      recipe.instagramPostURL &&
-      recipe.instagramPostURL.startsWith('https://www.instagram.com/p/')
-    ) {
-      fetch(`${recipe.instagramPostURL}?__a=1`)
-        .then((r) => r.json())
-        .then((o) => setImgURL(o.graphql.shortcode_media.display_url))
-        .catch(console.error);
-    }
-  });
 
   return (
     <Container fixed>
       <div className={classes.section1}>
-        <img className={classes.img} src={imgURL} alt={recipe.name} />
+        { recipe.imageURL && <img className={classes.img} src={recipe.imageURL} alt={recipe.name} /> }
         <Author {...recipe} />
       </div>
       <div className={classes.section2}>

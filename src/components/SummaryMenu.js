@@ -12,7 +12,7 @@ export default function SummaryMenu({
     <Grid container spacing={6} justify='center'>
       <Grid item>
         <Typography aria-label='serving'>
-          <PersonIcon /> {serving} Pers.
+          <PersonIcon /> {serving.value} {serving.unit}
         </Typography>
       </Grid>
       <Grid item>
