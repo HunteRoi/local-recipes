@@ -7,9 +7,6 @@ import RecipeTabs from './RecipeTabs';
 import Author from './Author';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   img: {
     margin: 'auto',
     display: 'block',
@@ -17,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '100%',
     width: 480,
     borderRadius: '5%',
+    marginBottom: theme.spacing(1.5)
   },
   section1: {
     margin: theme.spacing(3, 2),
@@ -39,9 +37,9 @@ export default function RecipeItem({ recipe }) {
   const classes = useStyles();
 
   return (
-    <Container fixed className={classes.root}>
+    <Container fixed>
       <div className={classes.section1}>
-        <img className={classes.img} src={recipe.image} alt={recipe.name} />
+        <img className={classes.img} src={recipe.imageURL} alt={recipe.name} />
         <Author {...recipe} />
       </div>
       <div className={classes.section2}>

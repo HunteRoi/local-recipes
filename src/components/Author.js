@@ -1,6 +1,5 @@
 import React from 'react';
 import { Avatar, Typography, Link, makeStyles } from '@material-ui/core';
-import CopyrightIcon from '@material-ui/icons/Copyright';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,16 +18,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Author({ author }) {
+export default function Author({ author: { avatarURL, name, instagramName } }) {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
 
   return (
     <div className={classes.root}>
-      <CopyrightIcon style={{ fontSize: 12 }} /> 
-      <Avatar src={author.avatar} alt={author.name} className={classes.small}/>
-      <Typography variant='caption' className={classes.label}>
-        {author.name} (<Link href={'https://www.instagram.com/' + author.instagram} onClick={preventDefault}>@{author.instagram}</Link>)
+      Recette par 
+      <Avatar src={avatarURL} alt={name} className={classes.small} aria-label='recipe author picture'/>
+      <Typography variant='caption' className={classes.label} aria-label='recipe author name'>
+        {name} (<Link href={`https://www.instagram.com/${instagramName}`} aria-label='instagram name'>@{instagramName}</Link>)
       </Typography>
     </div>
   );

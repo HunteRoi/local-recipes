@@ -11,6 +11,7 @@ const e_x = emoji.get('x');
 
 (async () => {
   try {
+    await execa('git', ['commit', '-am', 'Deploy commit']);
     await execa('git', ['checkout', '--orphan', 'gh-pages']);
     console.log(`${e_arrows} ${chalk.yellow('Building...')}`);
     await execa('npm', ['run', 'build']);

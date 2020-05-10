@@ -11,22 +11,18 @@ export default function SummaryMenu({
   return (
     <Grid container spacing={6} justify='center'>
       <Grid item>
-        <Typography>
+        <Typography aria-label='serving'>
           <PersonIcon /> {serving} Pers.
         </Typography>
       </Grid>
       <Grid item>
-        <Typography>
+        <Typography aria-label='total duration'>
           <ScheduleIcon /> {totalDuration} min
         </Typography>
       </Grid>
       <Grid item>
-        <Typography>
-          <img
-            src='https://img.icons8.com/material/24/000000/cooking-pot.png'
-            alt=''
-          />{' '}
-          {cookingDuration} min.
+        <Typography aria-label='cooking duration'>
+          <img src='cooking-pot.png' alt='' /> {cookingDuration} min.
         </Typography>
       </Grid>
     </Grid>

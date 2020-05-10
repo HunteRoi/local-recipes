@@ -5,18 +5,14 @@ import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import FormatListNumberedOutlinedIcon from '@material-ui/icons/FormatListNumberedOutlined';
 import PropTypes from 'prop-types';
 
-const useStyles = makeStyles({
-  root: {
-    flexGrow: 1,
-  },
+const useStyles = makeStyles(theme => ({
   list: {
-    maxWidth: 250,
+    textAlign: 'center'
   },
   ingredient:{
-    marginBottom: 10,
-    marginTop: 10
+    margin: theme.spacing(1.5, 0)
   }
-});
+}));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -37,13 +33,14 @@ TabPanel.propTypes = {
 export default function RecipeTabs({ steps, ingredients }) {
   const [value, setValue] = React.useState(0);
   const classes = useStyles();
+  const ingredientsLastItem = ingredients.length-1;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <Paper variant='outlined' className={classes.root}>
+    <Paper variant='outlined'>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -60,9 +57,11 @@ export default function RecipeTabs({ steps, ingredients }) {
           {ingredients.map((ingredient, i) => (
             <div key={i}>
               <Typography className={classes.ingredient}>
-                {ingredient.value} {ingredient.unit ? `${ingredient.unit} de` : ''} {ingredient.name}
+                {ingredient.value}{' '}
+                {ingredient.unit ? `${ingredient.unit} de` : ''}{' '}
+                {ingredient.name}
               </Typography>
-              <Divider />
+              {i !== ingredientsLastItem && <Divider />}
             </div>
           ))}
         </div>

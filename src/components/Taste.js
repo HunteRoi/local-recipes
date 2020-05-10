@@ -35,9 +35,9 @@ export default function Taste({ numberOfStars }) {
 
   return (
     <div className={classes.root}>
-      <Rating name='hover-feedback' value={value} precision={0.5} readOnly />
+      <Rating name='hover-feedback' value={value} precision={0.5} readOnly aria-label='taste rating'/>
       {value !== null && (
-        <Box ml={2} className={classes.label}>
+        <Box ml={1} className={classes.label} aria-label='taste rating label'>
           {labels[value]}
         </Box>
       )}
