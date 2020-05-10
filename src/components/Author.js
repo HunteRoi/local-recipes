@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    margin: 'auto'
+    margin: 'auto',
   },
   label: {
     marginLeft: theme.spacing(0.5),
@@ -18,15 +18,48 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Author({ author: { avatarURL, name, instagramName } }) {
+export default function Author({ author: { name, socialMedia } }) {
   const classes = useStyles();
+  const [profilePictureURL, setProfilePictureURL] = React.useState(socialMedia.profilePictureURL || '');
+  const [profileURL, setProfileURL] = React.useState(socialMedia.profileURL || '');
+  const [username, setUsername] = React.useState(socialMedia.username || '');
+
+  React.useLayoutEffect(() => {
+    if (
+      socialMedia &&
+      socialMedia.type.toLowerCase() === 'instagram' &&
+      socialMedia.username
+    ) {
+      fetch(`https://www.instagram.com/${socialMedia.username}/?__a=1`)
+        .then((r) => r.json())
+        .then((o) => {
+          setProfilePictureURL(o.graphql.user.profile_pic_url_hd);
+          setProfileURL(`https://instagram.com/${socialMedia.username}`);
+          setUsername(o.graphql.user.full_name);
+        })
+        .catch(console.error);
+    }
+  });
 
   return (
     <div className={classes.root}>
-      Recette par 
-      <Avatar src={avatarURL} alt={name} className={classes.small} aria-label='recipe author picture'/>
-      <Typography variant='caption' className={classes.label} aria-label='recipe author name'>
-        {name} (<Link href={`https://www.instagram.com/${instagramName}`} aria-label='instagram name'>@{instagramName}</Link>)
+      Recette par
+      <Avatar
+        src={profilePictureURL}
+        alt={name}
+        className={classes.small}
+        aria-label='recipe author picture'
+      />
+      <Typography
+        variant='caption'
+        className={classes.label}
+        aria-label='recipe author name'
+      >
+        {name} (
+        <Link href={profileURL} aria-label='social network name'>
+          @{username}
+        </Link>
+        )
       </Typography>
     </div>
   );

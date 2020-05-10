@@ -30,6 +30,18 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
+  const [name, setName] = React.useState('Tinaël Devresse');
+  const [profilePic, setProfilePic] = React.useState('me.jpg');
+  
+  React.useLayoutEffect(() => {
+    fetch(`https://www.instagram.com/titidevresse/?__a=1`)
+      .then((r) => r.json())
+      .then((o) => {
+        setProfilePic(o.graphql.user.profile_pic_url_hd);
+        setName(o.graphql.user.full_name);
+      })
+      .catch(console.error);
+  });
 
   return (
     <React.Fragment>
@@ -38,11 +50,18 @@ function App() {
         <Typography variant='h2'>Mes Recettes Maison</Typography>
 
         <div className={classes.root}>
-          <Avatar alt='Tinaël Devresse' src='me.jpg' aria-label='author picture' />
-          <Typography className={classes.avatarLabel} aria-label='author name' >
-            Tinaël Devresse
+          <Avatar
+            alt={name}
+            src={profilePic}
+            aria-label='author picture'
+          />
+          <Typography className={classes.avatarLabel} aria-label='author name'>
+            {name}
           </Typography>
-          <Typography className={classes.lastUpdated} aria-label='page last modified date'>
+          <Typography
+            className={classes.lastUpdated}
+            aria-label='page last modified date'
+          >
             - Mis à jour le 10-05-2020
           </Typography>
         </div>
