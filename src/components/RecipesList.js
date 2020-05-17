@@ -13,11 +13,10 @@ import recipes from '../data/recipes.json';
 const ExpansionPanelSummary = withStyles({
   root: {
     backgroundColor: 'rgba(0, 0, 0, .03)',
-    borderBottom: '1px solid rgba(0, 0, 0, .125)',
-    marginBottom: -1,
     minHeight: 56,
     '&$expanded': {
       minHeight: 56,
+      borderBottom: '1px solid rgba(0, 0, 0, .125)'
     },
   },
   content: {
@@ -38,15 +37,10 @@ const ExpansionPanel = withStyles({
   root: {
     border: '1px solid rgba(0, 0, 0, .125)',
     boxShadow: 'none',
-    '&:not(:last-child)': {
-      borderBottom: 0,
-    },
     '&:before': {
       display: 'none',
     },
-    '&$expanded': {
-      margin: 'auto',
-    },
+    marginBottom: 10
   },
   expanded: {},
 })(MuiExpansionPanel);
@@ -70,10 +64,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function RecipesList() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState('');
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
-  };
 
   return (
     <div className={classes.root}>
@@ -83,8 +73,6 @@ export default function RecipesList() {
           <ExpansionPanel
             key={index}
             square
-            expanded={expanded === dataId}
-            onChange={handleChange(dataId)}
           >
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
