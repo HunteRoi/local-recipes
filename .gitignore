@@ -2,6 +2,10 @@
 
 /src/data
 
+# other
+.vs
+.vscode
+
 # dependencies
 /node_modules
 /.pnp
