@@ -47,7 +47,7 @@ function App() {
             className={classes.lastUpdated}
             aria-label='page last modified date'
           >
-            - Mis à jour le 17-05-2020
+            - Mis à jour le 12-08-2020
           </Typography>
         </div>
 
@@ -55,7 +55,7 @@ function App() {
           Ce site rassemble les quelques recettes que j'ai réalisées durant ma
           courte vie, en apportant quelques informations supplémentaires comme
           un rating basé sur mes goûts ainsi que les personnes qui m'ont fait
-          découvrir chacun de ces merveilles culinaires. Merci à elles!
+          découvrir chacune de ces merveilles culinaires. Merci à elles!
         </Typography>
 
         <RecipesList />
