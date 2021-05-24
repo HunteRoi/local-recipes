@@ -1,0 +1,418 @@
+[
+  {
+    "videoURL": "creme-brulee.mp4",
+    "author": {
+      "name": "Tinaël Devresse"
+    },
+    "name": "Crème brûlée",
+    "totalDuration": 70,
+    "cookingDuration": 50,
+    "serving": {
+      "value": 6,
+      "unit": "ramequins"
+    },
+    "stars": 4.5,
+    "ingredients": [
+      {
+        "name": "sucre",
+        "value": 130,
+        "unit": "g"
+      },
+      {
+        "name": "sucre vanillé",
+        "value": 2,
+        "unit": "sachet(s)"
+      },
+      {
+        "name": "lait",
+        "value": 20,
+        "unit": "cl"
+      },
+      {
+        "name": "crème entière",
+        "value": 30,
+        "unit": "cl"
+      },
+      {
+        "name": "oeuf",
+        "value": 5,
+        "unit": "jaune(s)"
+      }
+    ],
+    "steps": [
+      "Faire bouillir le lait dans une casserole.",
+      "Une fois à ébullition, ajouter la crème et le sucre hors du feu.",
+      "Ajouter les jaunes d'oeufs, mélanger puis remettre à chauffer doucement (surtout ne pas bouillir!).",
+      "Une fois le mélange chaud et homogène, verser dans de petits plats individuels (ramequins).",
+      "Mettre le tout au four au bain marie et laisser cuire doucement à 180°C pendant environ 50 minutes.",
+      "Laisser refroidir puis mettre du sucre et le brûler avec un petit chalumeau de cuisine."
+    ]
+  },
+
+  {
+    "imageURL":"quesadillas-maison.jpg",
+    "author": {
+      "name": "Isaline Didier",
+      "socialMedia": {
+        "username": "isaline_didier",
+        "profilePictureURL": "isaline_didier.jpg",
+        "profileURL": "https://instagram.com/isaline_didier"
+      }
+    },
+    "name": "Quesadillas maison",
+    "totalDuration": 35,
+    "cookingDuration": 30,
+    "serving": {
+      "value": 8,
+      "unit": "parts"
+    },
+    "stars": 4,
+    "ingredients": [
+      {
+        "name": "poivron(s) rouge",
+        "value": "1/2"
+      },
+      {
+        "name": "poivron(s) jaune",
+        "value": "1/2"
+      },
+      {
+        "name": "poulet",
+        "value": 200,
+        "unit": "g"
+      },
+      {
+        "name": "épices à tacos",
+        "value": 1,
+        "unit": "sachet(s)"
+      },
+      {
+        "name": "wrap(s)",
+        "value": 2
+      },
+      {
+        "name": "fromage râpé",
+        "value": 1,
+        "unit": "sachet(s)"
+      }
+    ],
+    "steps": [
+      "Couper la queue des poivrons, les retourner et découper le long des lignes naturelles afin de séparer le centre des bords des poivrons.",
+      "Récupérer les bords et les nettoyer à l'eau. Les couper en cubes fins.",
+      "Verser un fond d'eau dans une poêle et y ajouter les cubes fins de poivrons. Pendant la cuisson, ne pas hésiter à rajouter de l'eau dans le cas où les poivrons ne sont pas assez cuits mais que l'eau s'est évaporée.",
+      "Couper le poulet en cubes fins.",
+      "Les ajouter aux poivrons une fois que ceux-ci sont presque cuits. Ajouter les épices à tacos généreusement pendant la cuisson du poulet avec les poivrons.",
+      "Placer un wrap sur une feuille d'aluminium.",
+      "Une fois la préparation cuite, déposer le contenu sur le wrap préalablement recouvert de fromage râpé. Ajouter à nouveau du fromage râpé avant de recouvrir du second wrap.",
+      "Optionnellement, mélanger de l'huile d'olive avec une épice comme le thym ou les herbes de provence et peindre le wrap du dessus.",
+      "Enfourner à 190°C jusqu'à ce que le wrap supérieur semble bien croustillant."
+    ]
+  },
+  
+  {
+    "imageURL": "ratatouille.png",
+    "author": {
+      "name": "Romain Sale",
+      "socialMedia": {
+        "username": "rorofourneau",
+        "profilePictureURL": "rorofourneau.jpg",
+        "profileURL": "https://instagram.com/rorofourneau"
+      }
+    },
+    "name": "Poulet, carottes et patates",
+    "totalDuration": 120,
+    "cookingDuration": 90,
+    "serving": {
+      "value": 2,
+      "unit": "Pers."
+    },
+    "stars": 3,
+    "ingredients": [
+      {
+        "name": "poulet",
+        "value": 2,
+        "unit": "filet(s)"
+      },
+      {
+        "name": "carotte(s) normale(s)",
+        "value": 6
+      },
+      {
+        "name": "patate(s) de taille moyenne à chair ferme",
+        "value": 6
+      },
+      {
+        "name": "poulet",
+        "value": 2,
+        "unit": "cube(s) de bouillon"
+      },
+      {
+        "name": "oignon(s) rouge(s)",
+        "value": 1
+      },
+      {
+        "name": "laurier",
+        "value": 2,
+        "unit": "feuille(s)"
+      },
+      {
+        "name": "curcuma"
+      },
+      {
+        "name": "cumin"
+      },
+      {
+        "name": "sel"
+      },
+      {
+        "name": "poivre"
+      },
+      {
+        "name": "poivre de Cayenne / piment d'Espelette"
+      }
+    ],
+    "steps": [
+      "Éplucher les patates. Les couper en 6 morceaux.",
+      "Éplucher les carottes. Les couper en petites tranches.",
+      "Ciseller l'oignon finement.",
+      "Faire revenir l'oignon dans un peu d'huile d'olive jusqu'à les voir passer de translucide à opaque (ils ne doivent pas colorer). Les réserver.",
+      "Remettre un peu d'huile d'olive dans la poêle.",
+      "Colorer le poulet à feu très vif (joli couleur sur les 2 faces mais pas cuit).",
+      "Faire chauffer 1L d'eau avec les cubes de bouillon.",
+      "Ajouter les carottes, les patates et les oignons dans l'eau.",
+      "Ajouter de l'eau froide pour être à niveau.",
+      "Une fois les ingrédients sous l'eau, rajouter en quantité les épices (dans l'ordre: curcuma, cumin, poivre de Cayenne/piment d'Espelette, sel et poivre).",
+      "Ajouter le laurier et couvrir la casserole à 80%.",
+      "Laisser mijoter en vérifiant toutes les 15-20 minutes jusqu'à épaississement de l'eau et obtention d'une belle sauce."
+    ]
+  },
+
+  {
+    "imageURL" : "cookies-trois-chocolats.jpg",
+    "author": {
+      "name": "Shamsy Cliche",
+      "socialMedia": {
+        "username": "shamsycliche",
+        "profilePictureURL": "shamsycliche.jpg",
+        "profileURL": "https://www.instagram.com/shamsycliche/"
+      }
+    },
+    "name": "Cookies au chocolat",
+    "totalDuration": 155,
+    "cookingDuration": 30,
+    "serving": {
+      "value": 25,
+      "unit": "cookies"
+    },
+    "stars": 4,
+    "ingredients": [
+      {
+        "name": "oeuf",
+        "value": 1
+      },
+      {
+        "name": "sucre",
+        "value": 75,
+        "unit": "g"
+      },
+      {
+        "name": "cassonade",
+        "value": 100,
+        "unit": "g"
+      },
+      {
+        "name": "sel",
+        "value": 1,
+        "unit": "pincée(s)"
+      },
+      {
+        "name": "vanille liquide",
+        "value": 1,
+        "unit": "c. à café"
+      },
+      {
+        "name": "beurre",
+        "value": 100,
+        "unit": "g"
+      },
+      {
+        "name": "farine",
+        "value": 225,
+        "unit": "g"
+      },
+      {
+        "name": "levure chimique",
+        "value": 1,
+        "unit": "c. à café"
+      },
+      {
+        "name": "chocolat de couverture noire",
+        "value": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Mélanger le beurre ramoli avec le sucre et la cassonade.",
+      "Ajouter l'oeuf, la vanille liquide et le sel.",
+      "Ajouter le chocolat taillé en petites pépites et la levure chimique.",
+      "Ajouter la farine.",
+      "Continuer à bien mélanger jusqu'à obtention d'une pâte homogène.",
+      "Disposer de cette pâte sur du papier sulfurisé. Lui donner la forme d'un boudin.",
+      "Envelopper le boudin de papier sulfurisé et serrer avec la spatule métallique afin d'obtenir un boudin bien régulier.",
+      "Laisser reposer au frais durant 2 heures.",
+      "Préchauffer le four (180°/200°C).",
+      "Retirer le papier sulfurisé.",
+      "Détailler au couteau en rondelles d'1/2 cm d'épaisseur.",
+      "Disposer ces rondelles sur une plaque graissée. Prendre soin de les disposer en quiconce afin qu'ils ne se collent pas.",
+      "Enfourner à four chaud.",
+      "Laisser cuire jusqu'à coloration désirée. Plus les cookies seront colorés, plus ils seront secs.",
+      "Au terme de la cuisson, les laisser poser deux minutes avant de les décoller de la plaque à l'aide du spatule plate. Laisser refroidir."
+    ]
+  },
+
+  {
+    "imageURL" : "cookies-sables.jpg",
+    "author": {
+      "name": "Monique Devresse"
+    },
+    "name": "Cookies-sablés aux pépites de chocolat",
+    "totalDuration": 60,
+    "cookingDuration": 30,
+    "serving": {
+      "value": 30,
+      "unit": "cookies"
+    },
+    "stars": 3,
+    "ingredients": [
+      {
+        "name": "sucre semoule",
+        "value": 100,
+        "unit": "g"
+      },
+      {
+        "name": "beurre",
+        "value": 100,
+        "unit": "g"
+      },
+      {
+        "name": "chocolat en morceaux",
+        "value": 100,
+        "unit": "g"
+      },
+      {
+        "name": "sucre vanillé",
+        "value": 1,
+        "unit": "sachet(s)"
+      },
+      {
+        "name": "levure chimique",
+        "value": "1/2",
+        "unit": "sachet(s)"
+      },
+      {
+        "name": "oeuf",
+        "value": 1
+      },
+      {
+        "name": "farine",
+        "value": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Préchauffer le four à 180°.",
+      "Faire ramolir le beurre. Le mélanger au sucre et à(aux) oeuf(s) dans un récipient.",
+      "Ajouter le sucre vanillé et la levure. Mélanger.",
+      "Ajouter la farine petit à petit pour avoir une pâte lisse et homogène.",
+      "Incorporer le chocolat.",
+      "Faire des petites boules de pâtes et les déposer sur une plaque couverte de papier sulfurisé. Veiller à bien espacer les boules de quelques centimètres car elles s'étalent en cuisant.",
+      "Enfourner la plaque pendant un quart d'heure."
+    ]
+  },
+
+  {
+    "imageURL":"porc-caramel-chinois.jpg",
+    "author": {
+      "name": "Romain Sale",
+      "socialMedia": {
+        "username": "rorofourneau",
+        "profilePictureURL": "rorofourneau.jpg",
+        "profileURL":"https://instagram.com/rorofourneau"
+      }
+    },
+    "name": "Du porc au caramel chinois avec sa montagne de riz",
+    "totalDuration": 50,
+    "cookingDuration": 30,
+    "serving": {
+      "value": 4,
+      "unit": "Pers."
+    },
+    "stars": 3.5,
+    "ingredients": [
+      {
+        "name": "sauté de porc",
+        "value": 500,
+        "unit": "g"
+      },
+      {
+        "name": "oignon(s) rouge(s)",
+        "value": 1
+      },
+      {
+        "name": "soja sucrée",
+        "value": 6,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "soja salée",
+        "value": 1,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "huile de sésame",
+        "value": 2,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "miel liquide",
+        "value": 2,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "sauce nuoc mam",
+        "value": 1,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "fécule de maïs",
+        "value": 2,
+        "unit": "c à soupe"
+      },
+      {
+        "name": "sel"
+      },
+      {
+        "name": "poivre"
+      },
+      {
+        "name": "riz",
+        "value": 4,
+        "unit": "sachet(s)"
+      }
+    ],
+    "steps": [
+      "Remplir un verre d'eau avec 1c à soupe de fécule de maïs.",
+      "Peler et émincer l'(es) oignon(s) de manière à avoir de petits cubes.",
+      "Découper le porc en petits cubes.",
+      "Verser dans un grand bol le miel, la sauce soja sucrée, la sauce soja sucrée, la sauce nuoc mam, 1c à soupe de fécule de maïs. Bien mélanger le tout.",
+      "Verser l'huile de sésame dans une marmite, un wok ou une poêle profonde. Faire chauffer.",
+      "Préparer une marmite d'eau salée pour le riz.",
+      "Une fois que l'huile crépite, déposer la viande en cubes et l'(es) oignon(s) émincés. Laisser dorer 2 à 3 minutes à feu vif.",
+      "Verser le grand bol de sauce sur la viande. Remuer.",
+      "Ajouter le verre d'eau préparé au début. Rajouter de l'eau jusqu'à ce que la viande et l'(es) oignon(s) soient recouverts. Laisser cuire à feu doux durant 30 minutes.",
+      "Faire bouillir l'eau de la marmite pour le riz.",
+      "Immerger le(s) sachet(s) de riz dans l'eau bouillante 15 minutes avant la fin de la cuisson du porc.",
+      "Servir le porc sur le riz."
+    ]
+  }
+]

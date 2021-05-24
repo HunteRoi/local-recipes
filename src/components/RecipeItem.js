@@ -7,7 +7,7 @@ import RecipeTabs from './RecipeTabs';
 import Author from './Author';
 
 const useStyles = makeStyles((theme) => ({
-  img: {
+  recipeImageORVideo: {
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
@@ -38,7 +38,11 @@ export default function RecipeItem({ recipe }) {
   return (
     <Container fixed>
       <div className={classes.section1}>
-        { recipe.imageURL && <img className={classes.img} src={recipe.imageURL} alt={recipe.name} /> }
+        { recipe.imageURL && <img className={classes.recipeImageORVideo} src={recipe.imageURL} alt={recipe.name} /> }
+        { recipe.videoURL && <video className={classes.recipeImageORVideo} muted autoPlay>
+          <source src={recipe.videoURL} alt={recipe.name} type="video/mp4" />
+          <p>Votre navigateur ne supporte pas les vidéos HTML5.</p>
+        </video>}
         <Author {...recipe} />
       </div>
       <div className={classes.section2}>
