@@ -39,7 +39,7 @@ export default function RecipeItem({ recipe }) {
     <Container fixed>
       <div className={classes.section1}>
         { recipe.imageURL && <img className={classes.recipeImageORVideo} src={recipe.imageURL} alt={recipe.name} /> }
-        { recipe.videoURL && <video className={classes.recipeImageORVideo} muted autoPlay>
+        { recipe.videoURL && <video className={classes.recipeImageORVideo} muted={true} autoPlay={true} loop={true}>
           <source src={recipe.videoURL} alt={recipe.name} type="video/mp4" />
           <p>Votre navigateur ne supporte pas les vidéos HTML5.</p>
         </video>}
