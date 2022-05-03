@@ -1,5 +1,60 @@
 [
   {
+    "imageURL": "pates-poulet-curry.jpg",
+    "author": {
+      "name": "Romain Sale",
+      "socialMedia": {
+        "username": "rorofourneau",
+        "profilePictureURL": "rorofourneau.jpg",
+        "profileURL": "https://instagram.com/rorofourneau"
+      }
+    },
+    "name": "Tagliatelles poulet curry",
+    "totalDuration": 120,
+    "cookingDuration": 80,
+    "serving": {
+      "value": 3,
+      "unit": "parts"
+    },
+    "stars": 4.5,
+    "ingredients": [
+      {
+        "name": "carotte(s) normale(s)",
+        "value": 5
+      },
+      {
+        "name": "curry",
+        "value": "quelques",
+        "unit": "c. à café"
+      },
+      {
+        "name": "poulet",
+        "unit": "filet(s)",
+        "value": 3
+      },
+      {
+        "name": "tagliatelles",
+        "unit": "sachet(s)",
+        "value": "1/2"
+      },
+      {
+        "name": "bouillon de poulet",
+        "unit": "cube(s)",
+        "value": 2
+      }
+    ],
+    "steps": [
+      "Éplucher les carottes. Les couper en petites tranches.",
+      "Couper le poulet en morceaux.",
+      "Chauffer 1L d'eau pour les cubes de bouillon. Une fois l'eau chaude, laiser les cubes se désintégrer dans l'eau et ajouter du curry.",
+      "Épicer le poulet avec du curry. Ensuite, colorer le poulet à la poêle sur feu vif.",
+      "Une fois le poulet prêt, mettre les rondelles de carotte et couvrir avec l'eau au bouillon.",
+      "Laisser cuire le poulet et les carottes dans le bouillon. Laisser revenir afin d'avoir une belle sauce.",
+      "Chauffer l'eau de la casserolle pour les pâtes. Une fois à ébulision, y mettre les pâtes.",
+      "Passer les pâtes à la passoire une fois cuits, puis remettre dans la casserolle avec le poulet, les carottes et la sauce."
+    ]
+  },
+  {
     "videoURL": "creme-brulee.mp4",
     "author": {
       "name": "Tinaël Devresse"
@@ -50,7 +105,7 @@
   },
 
   {
-    "imageURL":"quesadillas-maison.jpg",
+    "imageURL": "quesadillas-maison.jpg",
     "author": {
       "name": "Isaline Didier",
       "socialMedia": {
@@ -108,7 +163,7 @@
       "Enfourner à 190°C jusqu'à ce que le wrap supérieur semble bien croustillant."
     ]
   },
-  
+
   {
     "imageURL": "ratatouille.png",
     "author": {
@@ -188,7 +243,7 @@
   },
 
   {
-    "imageURL" : "cookies-trois-chocolats.jpg",
+    "imageURL": "cookies-trois-chocolats.jpg",
     "author": {
       "name": "Shamsy Cliche",
       "socialMedia": {
@@ -271,7 +326,7 @@
   },
 
   {
-    "imageURL" : "cookies-sables.jpg",
+    "imageURL": "cookies-sables.jpg",
     "author": {
       "name": "Monique Devresse"
     },
@@ -331,13 +386,13 @@
   },
 
   {
-    "imageURL":"porc-caramel-chinois.jpg",
+    "imageURL": "porc-caramel-chinois.jpg",
     "author": {
       "name": "Romain Sale",
       "socialMedia": {
         "username": "rorofourneau",
         "profilePictureURL": "rorofourneau.jpg",
-        "profileURL":"https://instagram.com/rorofourneau"
+        "profileURL": "https://instagram.com/rorofourneau"
       }
     },
     "name": "Du porc au caramel chinois avec sa montagne de riz",

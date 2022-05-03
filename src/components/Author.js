@@ -1,12 +1,12 @@
-import React from 'react';
-import { Avatar, Typography, Link, makeStyles } from '@material-ui/core';
+import React from "react";
+import { Avatar, Typography, Link, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    margin: 'auto',
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    margin: "auto",
   },
   label: {
     marginLeft: theme.spacing(0.5),
@@ -19,17 +19,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SocialMediaLink({ username, profileURL }) {
-  return profileURL && username 
-    ? (<>
-      (<Link href={profileURL} aria-label='social network name'>@{username}</Link>)
-    </>) 
-    : <></>;
+  return profileURL && username ? (
+    <>
+      (
+      <Link href={profileURL} aria-label="social network name">
+        @{username}
+      </Link>
+      )
+    </>
+  ) : (
+    <></>
+  );
 }
 
 export default function Author({ author: { name, socialMedia } }) {
   const classes = useStyles();
   const [profilePictureURL] = React.useState(
-    socialMedia ? socialMedia.profilePictureURL || '' : ''
+    socialMedia ? socialMedia.profilePictureURL || "" : ""
   );
 
   return (
@@ -39,12 +45,12 @@ export default function Author({ author: { name, socialMedia } }) {
         src={profilePictureURL}
         alt={name}
         className={classes.small}
-        aria-label='recipe author picture'
+        aria-label="recipe author picture"
       />
       <Typography
-        variant='caption'
+        variant="caption"
         className={classes.label}
-        aria-label='recipe author name'
+        aria-label="recipe author name"
       >
         {name} <SocialMediaLink {...socialMedia} />
       </Typography>

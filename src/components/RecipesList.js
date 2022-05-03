@@ -1,27 +1,27 @@
-import React from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
-import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MuiExpansionPanel from "@material-ui/core/ExpansionPanel";
+import MuiExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import MuiExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Typography from "@material-ui/core/Typography";
 
-import RecipeItem from './RecipeItem';
-import Taste from './Taste';
-import recipes from '../data/recipes.json';
+import RecipeItem from "./RecipeItem";
+import Taste from "./Taste";
+import recipes from "../data/recipes.json";
 
 const ExpansionPanelSummary = withStyles({
   root: {
-    backgroundColor: 'rgba(0, 0, 0, .03)',
+    backgroundColor: "rgba(0, 0, 0, .03)",
     minHeight: 56,
-    '&$expanded': {
+    "&$expanded": {
       minHeight: 56,
-      borderBottom: '1px solid rgba(0, 0, 0, .125)'
+      borderBottom: "1px solid rgba(0, 0, 0, .125)",
     },
   },
   content: {
-    '&$expanded': {
-      margin: '12px 0',
+    "&$expanded": {
+      margin: "12px 0",
     },
   },
   expanded: {},
@@ -35,25 +35,25 @@ const ExpansionPanelDetails = withStyles((theme) => ({
 
 const ExpansionPanel = withStyles({
   root: {
-    border: '1px solid rgba(0, 0, 0, .125)',
-    boxShadow: 'none',
-    '&:before': {
-      display: 'none',
+    border: "1px solid rgba(0, 0, 0, .125)",
+    boxShadow: "none",
+    "&:before": {
+      display: "none",
     },
-    marginBottom: 10
+    marginBottom: 10,
   },
   expanded: {},
 })(MuiExpansionPanel);
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: "100%",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
   },
-  column: { 
-    flexBasis: '33.33%'
+  column: {
+    flexBasis: "33.33%",
   },
   secondaryHeading: {
     marginLeft: theme.spacing(3),
@@ -68,15 +68,12 @@ export default function RecipesList() {
   return (
     <div className={classes.root}>
       {recipes.map((recipe, index) => {
-        const dataId = recipe.name.split(' ').join('-');
+        const dataId = recipe.name.split(" ").join("-");
         return (
-          <ExpansionPanel
-            key={index}
-            square
-          >
+          <ExpansionPanel key={index} square>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
-              id={dataId + '-header'}
+              id={dataId + "-header"}
             >
               <Typography className={classes.heading}>{recipe.name}</Typography>
 

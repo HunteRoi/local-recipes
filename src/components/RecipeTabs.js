@@ -1,17 +1,17 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Paper, Tabs, Tab, Box, Divider } from '@material-ui/core';
-import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
-import FormatListNumberedOutlinedIcon from '@material-ui/icons/FormatListNumberedOutlined';
-import PropTypes from 'prop-types';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Paper, Tabs, Tab, Box, Divider } from "@material-ui/core";
+import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
+import FormatListNumberedOutlinedIcon from "@material-ui/icons/FormatListNumberedOutlined";
+import PropTypes from "prop-types";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   list: {
-    textAlign: 'center'
+    textAlign: "center",
   },
-  ingredient:{
-    margin: theme.spacing(1.5, 0)
-  }
+  ingredient: {
+    margin: theme.spacing(1.5, 0),
+  },
 }));
 
 function TabPanel(props) {
@@ -33,32 +33,32 @@ TabPanel.propTypes = {
 export default function RecipeTabs({ steps, ingredients }) {
   const [value, setValue] = React.useState(0);
   const classes = useStyles();
-  const ingredientsLastItem = ingredients.length-1;
+  const ingredientsLastItem = ingredients.length - 1;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <Paper variant='outlined'>
+    <Paper variant="outlined">
       <Tabs
         value={value}
         onChange={handleChange}
-        variant='fullWidth'
-        indicatorColor='primary'
-        textColor='primary'
+        variant="fullWidth"
+        indicatorColor="primary"
+        textColor="primary"
         centered
       >
-        <Tab icon={<AssignmentOutlinedIcon />} label='Ingrédients' />
-        <Tab icon={<FormatListNumberedOutlinedIcon />} label='Étapes' />
+        <Tab icon={<AssignmentOutlinedIcon />} label="Ingrédients" />
+        <Tab icon={<FormatListNumberedOutlinedIcon />} label="Étapes" />
       </Tabs>
       <TabPanel value={value} index={0}>
         <div className={classes.list}>
           {ingredients.map((ingredient, i) => (
             <div key={i}>
               <Typography className={classes.ingredient}>
-                {ingredient.value}{' '}
-                {ingredient.unit ? `${ingredient.unit} de` : ''}{' '}
+                {ingredient.value}{" "}
+                {ingredient.unit ? `${ingredient.unit} de` : ""}{" "}
                 {ingredient.name}
               </Typography>
               {i !== ingredientsLastItem && <Divider />}
@@ -69,7 +69,7 @@ export default function RecipeTabs({ steps, ingredients }) {
       <TabPanel value={value} index={1}>
         {steps.map((step, i) => (
           <div key={i}>
-            <Typography variant='h6'>Étape {i + 1}</Typography>
+            <Typography variant="h6">Étape {i + 1}</Typography>
             <Typography>{step}</Typography>
             <br />
           </div>
