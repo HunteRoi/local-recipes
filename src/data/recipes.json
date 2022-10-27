@@ -70,13 +70,18 @@
     "ingredients": [
       {
         "name": "sucre",
-        "value": 130,
+        "value": 120,
         "unit": "g"
       },
       {
         "name": "sucre vanillé",
         "value": 2,
         "unit": "sachet(s)"
+      },
+      {
+        "name": "extrait de vanille",
+        "value": 1,
+        "unit": "c. à café"
       },
       {
         "name": "lait",
