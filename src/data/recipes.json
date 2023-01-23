@@ -1,5 +1,53 @@
 [
   {
+    "imageURL": "flan_mamy.jpg",
+    "author": {
+      "name": "Ma Mamy",
+      "socialMedia": {
+        "profilePictureURL": "mamy.jpg"
+      }
+    },
+    "name": "Flan maison",
+    "totalDuration": 50,
+    "cookingDuration": 40,
+    "serving": {
+      "value": 4,
+      "unit": "parts"
+    },
+    "stars": 5,
+    "ingredients": [
+      {
+        "name": "lait",
+        "value": 0.5,
+        "unit": "litre(s)"
+      },
+      {
+        "name": "sucre",
+        "value": 60,
+        "unit": "gramme(s)"
+      },
+      {
+        "name": "sucre vanillé",
+        "value": 1,
+        "unit": "sachet(s)"
+      },
+      {
+        "name": "oeuf(s)",
+        "value": 3
+      }
+    ],
+    "steps": [
+      "Préchauffer le four à 180°.",
+      "Faire chauffer le lait.",
+      "Ajouter le sucre dans le lait.",
+      "Battre les oeufs sans mousser.",
+      "Ajouter le lait bouillant sucré pour éviter la coagulation.",
+      "Verser le mélange dans le plat à mettre au four, puis enfourner à 180°C.",
+      "Pour vérifier la cuisson, il suffit de piquer un couteau dedans. S'il ressort propre (sec), c'est que le flan est cuit."
+    ]
+  },
+
+  {
     "imageURL": "pates-poulet-curry.jpg",
     "author": {
       "name": "Romain Sale",
