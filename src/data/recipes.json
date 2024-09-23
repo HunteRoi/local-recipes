@@ -10,8 +10,8 @@
       }
     },
     "name": "Porc tonkatsu et riz au jasmin sur rondelle de courgette",
-    "totalDuration": 120,
-    "cookingDuration": 80,
+    "totalDuration": 40,
+    "cookingDuration": 15,
     "serving": {
       "value": 3,
       "unit": "parts"
