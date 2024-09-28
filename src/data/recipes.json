@@ -1,5 +1,70 @@
 [
   {
+    "imageURL": "brownies.jpg",
+    "author": {
+      "name": "Gaëlle Le Bellu",
+      "socialMedia": {
+        "username": "gallymini_",
+        "profilePictureURL": "gallymini_.jpg",
+        "profileURL": "https://www.instagram.com/gallymini_"
+      }
+    },
+    "name": "Brownie",
+    "totalDuration": 40,
+    "cookingDuration": 25,
+    "serving": {
+      "value": 3,
+      "unit": "parts"
+    },
+    "stars": 4.5,
+    "ingredients": [
+      {
+        "name": "beurre demi-sel",
+        "unit": "gramme(s)",
+        "value": 160
+      },
+      {
+        "name": "vergeoise (sucre brun)",
+        "unit": "gramme(s)",
+        "value": 150
+      },
+      {
+        "name": "farine",
+        "unit": "gramme(s)",
+        "value": 170
+      },
+      {
+        "name": "oeuf(s)",
+        "value": 2
+      },
+      {
+        "name": "sucre",
+        "unit": "gramme(s)",
+        "value": 50
+      },
+      {
+        "name": "compote de pommes",
+        "unit": "gramme(s)",
+        "value": 50
+      },
+      {
+        "name": "pépites de chocolat",
+        "unit": "gramme(s)",
+        "value": 250
+      }
+    ],
+    "steps": [
+      "Préchauffer le four à 170°C.",
+      "Faire fondre le beurre au micro-onde.",
+      "Ajouter les sucres avec le beurre fondu.",
+      "Ajouter les oeufs et la compote de pommes.",
+      "Mélanger fermement jusqu'à obtenir une pâte homogène.",
+      "Ajouter la farine au travers d'un tamis pour éviter les grumeaux et remuer.",
+      "Terminer la préparation en ajoutant les pépites de chocolat.",
+      "Répartir la mixture dans un moule et enfourner pour 25 minutes."
+    ]
+  },
+  {
     "imageURL": "porc-tonkatsu.jpg",
     "author": {
       "name": "Romain Sale",
