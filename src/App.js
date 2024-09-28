@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Typography, Container, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -32,6 +32,23 @@ function App() {
   const classes = useStyles();
   const name = "Tinaël Devresse";
 
+  const [lastUpdated, setLastUpdated] = useState('03-05-2022');
+
+  useEffect(() => {
+    async function fetchLastUpdate() {
+      const response = await fetch("https://api.github.com/repos/hunteroi/local-recipes/branches/master");
+      const json = await response.json();
+      const date = new Date(json.commit.commit.committer.date);
+      const result = date
+        .toLocaleDateString("fr-BE", { year: "numeric", month: "2-digit", day: "2-digit" })
+        .replace(/\//g, "-");
+
+      setLastUpdated(result);
+    }
+
+    fetchLastUpdate();
+  }, []);
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -47,7 +64,7 @@ function App() {
             className={classes.lastUpdated}
             aria-label="page last modified date"
           >
-            - Mis à jour le 03-05-2022
+            - Mis à jour le {lastUpdated}
           </Typography>
         </div>
 

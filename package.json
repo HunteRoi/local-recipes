@@ -1,18 +1,16 @@
 {
   "name": "local_recipes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://hunteroi.github.io/local-recipes",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^14.1.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "memfs": "^4.12.0"
   },
   "devDependencies": {
     "chalk": "^4.0.0",
