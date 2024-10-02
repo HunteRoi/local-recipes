@@ -1,5 +1,65 @@
 [
   {
+    "imageURL": "lava_cake.jpg",
+    "author": {
+      "name": "Gaëlle Le Bellu",
+      "socialMedia": {
+        "username": "gallymini_",
+        "profilePictureURL": "gallymini_.jpg",
+        "profileURL": "https://www.instagram.com/gallymini_"
+      }
+    },
+    "name": "Fondant au chocolat",
+    "totalDuration": 50,
+    "cookingDuration": 25,
+    "serving": {
+      "value": 6,
+      "unit": "parts"
+    },
+    "stars": 3,
+    "ingredients": [
+      {
+        "name": "beurre demi-sel",
+        "unit": "gramme(s)",
+        "value": 150
+      },
+      {
+        "name": "vergeoise (sucre brun)",
+        "unit": "gramme(s)",
+        "value": 120
+      },
+      {
+        "name": "farine",
+        "unit": "gramme(s)",
+        "value": 60
+      },
+      {
+        "name": "oeuf(s)",
+        "value": 3
+      },
+      {
+        "name": "chocolat noir",
+        "unit": "gramme(s)",
+        "value": 100
+      },
+      {
+        "name": "chocolat au lait",
+        "unit": "gramme(s)",
+        "value": 150
+      }
+    ],
+    "steps": [
+      "Préchauffer le four à 165°C.",
+      "Faire fondre le beurre et le chocolat au bain-marie.",
+      "Mélanger les oeufs avec la vergeoise dans un grand bol.",
+      "Incorporer la farine puis mélanger jusqu'à obtenir une pâte homogène.",
+      "Ajouter le mélange de chocolat et de beurre fondu.",
+      "Remuer le tout à nouveau pour obtenir une pâte homogène.",
+      "Verser l'appareil dans un moule préalablement beurré.",
+      "Enfourner pour 25 minutes. Le coeur doit être fondant."
+    ]
+  },
+  {
     "imageURL": "brownies.jpg",
     "author": {
       "name": "Gaëlle Le Bellu",
