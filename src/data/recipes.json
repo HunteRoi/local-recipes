@@ -1,5 +1,59 @@
 [
   {
+    "imageURL": "chocolatissimo.jpg",
+    "author": {
+      "name": "Tinaël Devresse",
+      "socialMedia": {
+        "username": "tinaeldevresse",
+        "profilePictureURL": "tinaeldevresse.jpg",
+        "profileURL": "https://www.instagram.com/tinaeldevresse/"
+      }
+    },
+    "name": "Chocolatissimo",
+    "totalDuration": 150,
+    "cookingDuration": 50,
+    "serving": {
+      "value": 8,
+      "unit": "parts"
+    },
+    "stars": 3.5,
+    "ingredients": [
+      {
+        "name": "chocolat noir",
+        "unit": "gramme(s)",
+        "value": 400
+      },
+      {
+        "name": "beurre non-salé",
+        "unit": "gramme(s)",
+        "value": 280
+      },
+      {
+        "name": "sucre",
+        "unit": "gramme(s)",
+        "value": 260
+      },
+      {
+        "name": "oeuf(s)",
+        "value": 10
+      }
+    ],
+    "steps": [
+      "Faire fondre 300g de chocolat au bain-marie pour obtenir une apparence lisse.",
+      "Défaire le beurre en crème.",
+      "Y ajouter en alternance et doucement le sucre et le chocolat en petites quantités et bien mélanger régulièrement .",
+      "Ajouter les 10 jaunes d'œuf, 1 à la fois, en mélangeant à la cuillère en bois à chaque ajout.",
+      "Monter les blancs en neige.",
+      "Insérer les blancs en neige délicatement dans la préparation chocolatée.",
+      "Étaler une petite moitié de la préparation chocolatée dans le fond des deux moules préalablement beurrés pour réaliser la croûte et mettre le reste de côté au frigo.",
+      "Enfourner les moules à 180°C pendant 50min (vérifier la cuisson à mi-parcours pour éviter les erreurs).",
+      "En fin de cuisson, faire fondre les 100g de chocolat restant pour la couche chocolatée du dessus.",
+      "Étaler la préparation mise de côté sur la première croute, et déposer la seconde au dessus puis faire couler le chocolat fondu sur la seconde croûte.",
+      "Réserver au frais avant de servir 4h plus tard."
+    ]
+  },
+
+  {
     "imageURL": "lava_cake.jpg",
     "author": {
       "name": "Gaëlle Le Bellu",
@@ -59,6 +113,7 @@
       "Enfourner pour 25 minutes. Le coeur doit être fondant."
     ]
   },
+
   {
     "imageURL": "brownies.jpg",
     "author": {
@@ -124,6 +179,7 @@
       "Répartir la mixture dans un moule et enfourner pour 25 minutes."
     ]
   },
+
   {
     "imageURL": "porc-tonkatsu.jpg",
     "author": {
@@ -308,7 +364,7 @@
   },
 
   {
-    "videoURL": "creme-brulee.mp4",
+    "videoURL": "creme-brulee.jpg",
     "author": {
       "name": "Tinaël Devresse"
     },
