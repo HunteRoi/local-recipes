@@ -21,7 +21,12 @@
       {
         "name": "chocolat noir",
         "unit": "gramme(s)",
-        "value": 400
+        "value": 350
+      },
+      {
+        "name": "crème entière",
+        "unit": "cl",
+        "value": "5"
       },
       {
         "name": "beurre non-salé",
@@ -45,11 +50,13 @@
       "Ajouter les 10 jaunes d'œuf, 1 à la fois, en mélangeant à la cuillère en bois à chaque ajout.",
       "Monter les blancs en neige.",
       "Insérer les blancs en neige délicatement dans la préparation chocolatée.",
-      "Étaler une petite moitié de la préparation chocolatée dans le fond des deux moules préalablement beurrés pour réaliser la croûte et mettre le reste de côté au frigo.",
-      "Enfourner les moules à 180°C pendant 50min (vérifier la cuisson à mi-parcours pour éviter les erreurs).",
-      "En fin de cuisson, faire fondre les 100g de chocolat restant pour la couche chocolatée du dessus.",
-      "Étaler la préparation mise de côté sur la première croute, et déposer la seconde au dessus puis faire couler le chocolat fondu sur la seconde croûte.",
-      "Réserver au frais avant de servir 4h plus tard."
+      "Étaler une petite moitié de la préparation chocolatée dans le fond des deux moules préalablement beurrés pour réaliser la croûte (si vous n'avez qu'un moule, répétez l'opération 2x) et mettre le reste de côté au frigo.",
+      "Enfourner les moules à 180°C pendant 30min (vérifier la cuisson à mi-parcours pour éviter les erreurs).",
+      "En fin de cuisson, faire fondre les 50g de chocolat restant.",
+      "Porter à ébulition la crème entière.",
+      "Mélanger le chocolat fondu et la crème entière par tiers (donc 3x) pour éviter les grumeaux dans la ganache.",
+      "Étaler la préparation mise de côté sur la première croute, et déposer la seconde au dessus puis faire couler la ganache chocolat sur le dessus de la seconde croûte.",
+      "Réserver au frais avant de servir quelques heures plus tard."
     ]
   },
 
